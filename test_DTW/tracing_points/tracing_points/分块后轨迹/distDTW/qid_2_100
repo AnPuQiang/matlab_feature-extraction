@@ -1,0 +1,44 @@
+tonyan@ubuntu:/mnt/hgfs/ubuntu_share/libsvm-ranksvm-3.20$ ./svm-train -t 2 gpcs_qid_2_100
+iter  1 act 1.615e+03 pre 1.515e+03 delta 2.867e+00 f 2.450e+03 |g| 1.356e+03 CG   4
+iter  2 act 1.945e+02 pre 1.478e+02 delta 2.867e+00 f 8.349e+02 |g| 2.609e+02 CG   4
+iter  3 act 1.031e+02 pre 8.235e+01 delta 2.867e+00 f 6.404e+02 |g| 1.153e+02 CG   5
+iter  4 act 2.878e+01 pre 2.429e+01 delta 2.867e+00 f 5.373e+02 |g| 4.562e+01 CG   5
+cg reaches trust region boundary
+iter  5 act 5.707e+00 pre 5.413e+00 delta 3.583e+00 f 5.085e+02 |g| 1.168e+01 CG   6
+cg reaches trust region boundary
+iter  6 act 1.529e+00 pre 1.475e+00 delta 3.878e+00 f 5.028e+02 |g| 1.672e+00 CG   6
+cg reaches trust region boundary
+iter  7 act 6.865e-01 pre 6.867e-01 delta 4.185e+00 f 5.013e+02 |g| 1.522e+00 CG   8
+nSV = 100
+tonyan@ubuntu:/mnt/hgfs/ubuntu_share/libsvm-ranksvm-3.20$ ./svm-predict gpcs_qid_2_100 gpcs_qid_2_100.model
+Usage: svm-predict [options] test_file model_file output_file
+options:
+-q : quiet mode (no outputs)
+tonyan@ubuntu:/mnt/hgfs/ubuntu_share/libsvm-ranksvm-3.20$ svm-predict gpcs_qid_2_100 gpcs_qid_2_100.model
+The program 'svm-predict' is currently not installed. You can install it by typing:
+sudo apt-get install libsvm-tools
+tonyan@ubuntu:/mnt/hgfs/ubuntu_share/libsvm-ranksvm-3.20$ ls
+blas                     gpcs_qid_2_100.model  gpcs_qid.txt        selectiontree.h  svm-train
+blas.h                   gpcs_qid2.model       gpcs_qid.txt.model  selectiontree.o  svm-train.c
+bodyfat_scale_qid        gpcs_qidd             gpcs_test           svm.cpp          tron.cpp
+bodyfat_scale_qid.model  gpcs_qiddd            Makefile            svm.h            tron.h
+COPYRIGHT                gpcs_qidddd           output              svm.o            tron.o
+dist.txt                 gpcs_qidddd.model     output_file         svm-predict      手册
+gpcs_qid                 gpcs_qiddd.model      output.model        svm-predict.c
+gpcs_qid2                gpcs_qidd.model       README.ranksvm      svm-scale
+gpcs_qid_2_100           gpcs_qid.model        selectiontree.cpp   svm-scale.c
+tonyan@ubuntu:/mnt/hgfs/ubuntu_share/libsvm-ranksvm-3.20$ ./svm-predict gpcs_qid_2_100 gpcs_qid_2_100.model output
+Pairwise Accuracy = 94.449%
+MeanNDCG (LETOR) = 0.995457
+tonyan@ubuntu:/mnt/hgfs/ubuntu_share/libsvm-ranksvm-3.20$ ./svm-train -t 0 gpcs_qid_2_100
+iter  1 act 1.591e+03 pre 1.490e+03 delta 7.886e-01 f 2.450e+03 |g| 5.333e+03 CG   2
+iter  2 act 2.068e+02 pre 1.554e+02 delta 7.886e-01 f 8.590e+02 |g| 1.109e+03 CG   3
+iter  3 act 1.326e+02 pre 1.019e+02 delta 1.021e+00 f 6.522e+02 |g| 5.106e+02 CG   4
+iter  4 act 5.209e+01 pre 4.230e+01 delta 1.021e+00 f 5.196e+02 |g| 1.684e+02 CG   4
+iter  5 act 1.216e+01 pre 1.048e+01 delta 1.021e+00 f 4.675e+02 |g| 5.149e+01 CG   4
+iter  6 act 1.005e+00 pre 9.710e-01 delta 1.021e+00 f 4.553e+02 |g| 2.769e+01 CG   4
+nSV = 100
+tonyan@ubuntu:/mnt/hgfs/ubuntu_share/libsvm-ranksvm-3.20$ ./svm-predict gpcs_qid_2_100 gpcs_qid_2_100.model output
+Pairwise Accuracy = 94.5306%
+MeanNDCG (LETOR) = 0.995608
+tonyan@ubuntu:/mnt/hgfs/ubuntu_share/libsvm-ranksvm-3.20$ 

@@ -1,0 +1,29 @@
+tonyan@ubuntu:/mnt/hgfs/ubuntu_share/libsvm-ranksvm-3.20$ ./svm-train -t 0 gpcs_qid_2_101
+iter  1 act 1.350e+03 pre 1.286e+03 delta 7.313e-01 f 2.449e+03 |g| 4.648e+03 CG   2
+iter  2 act 9.543e+01 pre 8.085e+01 delta 7.313e-01 f 1.099e+03 |g| 8.093e+02 CG   3
+iter  3 act 1.922e+01 pre 1.738e+01 delta 7.313e-01 f 1.004e+03 |g| 1.987e+02 CG   4
+iter  4 act 6.048e-01 pre 5.903e-01 delta 7.313e-01 f 9.844e+02 |g| 2.647e+01 CG   4
+nSV = 100
+tonyan@ubuntu:/mnt/hgfs/ubuntu_share/libsvm-ranksvm-3.20$ ./svm-predict gpcs_qid_2_101 gpcs_qid_2_101.model output
+Pairwise Accuracy = 89.3834%
+MeanNDCG (LETOR) = 0.972168
+tonyan@ubuntu:/mnt/hgfs/ubuntu_share/libsvm-ranksvm-3.20$ ./svm-train -t 2 gpcs_qid_2_101iter  1 act 1.386e+03 pre 1.321e+03 delta 2.643e+00 f 2.449e+03 |g| 1.241e+03 CG   4
+iter  2 act 9.717e+01 pre 8.197e+01 delta 2.643e+00 f 1.063e+03 |g| 1.915e+02 CG   5
+cg reaches trust region boundary
+iter  3 act 3.000e+01 pre 2.738e+01 delta 3.596e+00 f 9.658e+02 |g| 5.703e+01 CG   6
+cg reaches trust region boundary
+iter  4 act 1.747e+01 pre 1.743e+01 delta 5.117e+00 f 9.358e+02 |g| 2.013e+01 CG   6
+cg reaches trust region boundary
+iter  5 act 1.056e+01 pre 1.051e+01 delta 6.746e+00 f 9.184e+02 |g| 6.505e+00 CG   6
+cg reaches trust region boundary
+iter  6 act 7.446e+00 pre 7.451e+00 delta 8.434e+00 f 9.078e+02 |g| 3.736e+00 CG   7
+cg reaches trust region boundary
+iter  7 act 6.560e+00 pre 6.568e+00 delta 1.180e+01 f 9.003e+02 |g| 2.393e+00 CG   7
+cg reaches trust region boundary
+iter  8 act 2.914e+00 pre 2.913e+00 delta 1.210e+01 f 8.938e+02 |g| 1.446e+00 CG  10
+nSV = 100
+tonyan@ubuntu:/mnt/hgfs/ubuntu_share/libsvm-ranksvm-3.20$ ./svm-predict gpcs_qid_2_101 gpcs_qid_2_101.model output
+Pairwise Accuracy = 89.7101%
+MeanNDCG (LETOR) = 0.973963
+tonyan@ubuntu:/mnt/hgfs/ubuntu_share/libsvm-ranksvm-3.20$ 
+

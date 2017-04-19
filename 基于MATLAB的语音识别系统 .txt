@@ -1,0 +1,17 @@
+dtw － DTW算法演示程序 
+mfcc.m － MFCC参数计算程序 
+dtw.m － 基本的DTW算法 
+dtw2.m － 优化的DTW算法 
+testdtw.m － DTW算法测试程序 
+vad.m － 端点检测程序 
+enframe.m - 语音信号分帧程序(voicebox 工具箱中有,需下载)
+melbankm.m - 计算MFCC时，需调用此函数(voicebox 工具箱中有,需下载) 
+
+
+
+                                               方成林
+                                             QQ:31353807
+                                         E-mail:fcl8187@163.com
+                                              2005/5/17
+
+
