@@ -26,7 +26,7 @@ for i = 1:l
             numXXX(idA,:) = []; 
        
        if  ~isempty(numXXX)
-           if dtw(numAA,numXXX)<10000
+           if dtw(numAA,numXXX)<100000
            distDTW(i,j) = dtw(numAA,numXXX);
            end
        end

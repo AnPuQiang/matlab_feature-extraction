@@ -1,4 +1,4 @@
-function [ angle ] = angle( A,B,C )
+function [ angle ] = find_angle( A,B,C )
 %求每三个点形成的角度
 a = sqrt((B(1,1)-C(1,1))^2+(B(1,2)-C(1,2))^2);
 b = sqrt((A(1,1)-C(1,1))^2+(A(1,2)-C(1,2))^2);
